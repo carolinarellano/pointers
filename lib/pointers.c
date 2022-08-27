@@ -74,8 +74,16 @@ void reverse(int *collection, int count)
     printf("\n");
 }
 
-/*
+
 int calulate_frequency(int *collection, int count, int target)
 {
-  return 0;
-}*/
+    int i, j;
+    for(i = 0; i < count; i++)
+    {
+        if(*(collection + i) == target){
+            j++;
+        }
+    }
+    printf("[%d] frequency is: %d times", target, j);
+    return 0;
+}
