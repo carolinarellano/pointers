@@ -36,11 +36,11 @@ void insertion_sort(int *collection, int count)
     for (i = 1; i < count; i++)
     {
         j = i;
-        while (j >= 0 && *(collection + (j - 1)) < *(collection + j))
+        while (j > 0 && *(collection + j - 1) > *(collection + j))
         {
             k = *(collection + j);
-            *(collection + j) = *(collection + (j - 1));
-            *(collection + (j - 1)) = k;
+            *(collection + j) = *(collection + j - 1);
+            *(collection + j - 1) = k;
             j--;
         }
     }
