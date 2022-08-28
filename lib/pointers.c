@@ -1,6 +1,6 @@
 //
-// Created by Josean Camarena on 07/07/22.
-// Implemented by: $STUDENT$
+// Created by: Josean Camarena on July 7, 2022.
+// Implemented by: Carolina Arellano on August 27, 2022.
 //
 
 #include "pointers.h"
@@ -78,12 +78,13 @@ void reverse(int *collection, int count)
 int calulate_frequency(int *collection, int count, int target)
 {
     int i, j;
+    j = 0;
     for(i = 0; i < count; i++)
     {
         if(*(collection + i) == target){
             j++;
         }
     }
-    printf("[%d] frequency is: %d times", target, j);
+    printf("Element [%d] frequency is: %d times", target, j);
     return 0;
 }
