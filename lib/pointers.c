@@ -15,20 +15,14 @@ int bubble_sort(int *target, int count)
         {
             if(*(target + j) < *(target + i))
             {
+                times++;
                 temporal = *(target + j);
                 *(target + j) = *(target + i);
                 *(target + i) = temporal;
-                times++;
+
             }
         }
     }
-
-    printf("Bubble sort is swapping: %d times", times);
-    //for(int i = 0; i < count; i++)
-        //printf("%d ", target[i]);
-    printf("\n");
-
-
     return times;
 }
 
@@ -47,11 +41,6 @@ void insertion_sort(int *collection, int count)
             j--;
         }
     }
-
-    printf("Insertion sort: ");
-    for(int i = 0; i < count; i++)
-        printf("%d ", *(collection + i));
-    printf("\n");
 }
 
 
@@ -70,11 +59,6 @@ void reverse(int *collection, int count)
         j++;
         i--;
     }
-
-    printf("Reversed array: ");
-    for(int i = 0; i < count; i++)
-        printf("%d ", *(collection + i));
-    printf("\n");
 }
 
 
@@ -88,6 +72,5 @@ int calulate_frequency(int *collection, int count, int target)
             j++;
         }
     }
-    printf("Element [%d] frequency is: %d times", target, j);
-    return 0;
+    return j;
 }
