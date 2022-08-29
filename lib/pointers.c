@@ -8,6 +8,7 @@
 int bubble_sort(int *target, int count)
 {
     int temporal;
+    int times = 0;
     for(int i = 0; i < count; i++)
     {
         for(int j = i; j < count; j++)
@@ -17,14 +18,16 @@ int bubble_sort(int *target, int count)
                 temporal = *(target + j);
                 *(target + j) = *(target + i);
                 *(target + i) = temporal;
+                times++;
             }
         }
     }
 
-    printf("Bubble sort: ");
-    for(int i = 0; i < count; i++)
-        printf("%d ", target[i]);
+    printf("Bubble sort is executing: %d times", times);
+    //for(int i = 0; i < count; i++)
+        //printf("%d ", target[i]);
     printf("\n");
+
 
     return 0;
 }
