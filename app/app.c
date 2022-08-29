@@ -6,8 +6,8 @@ int main(void)
     int array3[30] = {0, 2, 4, 8, 1, 3, 5, 9, 10};
     int array4[30] = {1, 1, 1, 1, 1, 1, 1, 1, 1, 1};
 
-    /*bubble_sort(array, 9);
-    insertion_sort(array2, 10);
+    bubble_sort(array, 9);
+    /*insertion_sort(array2, 10);
     reverse(array2, 10);
     calulate_frequency(array, 9, 4);*/
 

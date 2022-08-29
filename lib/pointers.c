@@ -23,13 +23,13 @@ int bubble_sort(int *target, int count)
         }
     }
 
-    printf("Bubble sort is executing: %d times", times);
+    printf("Bubble sort is swapping: %d times", times);
     //for(int i = 0; i < count; i++)
         //printf("%d ", target[i]);
     printf("\n");
 
 
-    return 0;
+    return times;
 }
 
 void insertion_sort(int *collection, int count)
@@ -59,7 +59,7 @@ void reverse(int *collection, int count)
 {
     int i, j;
 
-    char temporal;
+    int temporal;
     i = count - 1;
     j = 0;
     while (i > j)
